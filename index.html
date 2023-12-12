@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Esta es la base de una página">
+      <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
+      <meta name="author" content="Nombre del autor">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="assets/icon.png">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- Enlace a la hoja de estilos de Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- Para la galeria de imagenes -->
+      <title>JHBit</title>
+</head>
+
+<body>
+  <!-- Logo de inicio y barra de navegación -->
+    <nav>
+    <div class="logo">
+      <img src="assets/images/JHbitMini.png" alt="Logo de la página" id="minIcon">
+    </div>
+    <ul class="menu" id="barrasDespl">
+      <li class="dropdown">
+        <a href="#">Inicio</a>
+        <ul class="submenu">
+          <li><a href="#">Opción 1</a></li>
+          <li><a href="#">Opción 2</a></li>
+          <li><a href="#">Opción 3</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Acerca de</a>
+        <ul class="submenu">
+          <li><a href="#">SRA</a></li>
+          <li><a href="#">Privado</a></li>
+          <li><a href="#">Terciario</a></li>
+          <li><a href="#">centralizada</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Proyectos</a>
+        <ul class="submenu">
+          <li><a href="https://store.steampowered.com/app/367520/Hollow_Knight/">Hollow Knight</a></li>
+          <li><a href="#">Blasphemous</a></li>
+          <li><a href="#">Celeste</a></li>
+          <li><a href="https://majorariatto.itch.io/majotori">Majotori</a></li>
+        </ul>
+      </li>
+      <li><a href="#contacto">Contacto</a></li>
+      <!-- El href contacto esta conectado a la seccion contacto -->
+    </ul>
+  </nav>
+
+  <!-- Carrusel -->
+  <main>
+    <div class="carousel-container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores y contenido del carrusel -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="assets\images\Cimg1.png" alt="Imagen 1" class="img-responsive center-block">
+                    <div class="carousel-caption">
+                        <h3>Hollow Knight</h3>
+                        <p>En este juego de plataformas y combate, los jugadores exploran un mundo interconectado lleno de maravillas y peligros. A medida que se adentran en los oscuros rincones de Hallownest, descubren antiguos secretos, enfrentan temibles criaturas y se encuentran con personajes intrigantes. El diseño del mundo es meticuloso y atmosférico, con hermosos paisajes dibujados a mano y una estética de insectos única que brinda una sensación de inmersión en un reino oscuro y mágico.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets\images\Cimg2.png" alt="Imagen 2" class="img-responsive center-block">
+                    <div class="carousel-caption">
+                        <h3>Blasphemous</h3>
+                        <p>Blasphemous es un juego de acción y plataformas que combina desafiantes mecánicas de juego con una estética visual única y una historia envolvente con referencias religiosas. Es una experiencia inmersiva para los amantes de los juegos de aventuras oscuras y atmosféricas.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets\images\Cimg3.png" alt="Imagen 3" class="img-responsive center-block">
+                    <div class="carousel-caption">
+                        <h3>Celeste</h3>
+                        <p>Un juego indie de plataformas y aventuras desarrollado por Matt Makes Games. En este cautivador título, los jugadores asumen el papel de Madeline, una joven decidida a escalar la imponente montaña Celeste. A medida que avanza por los diversos niveles se enfrenta a desafíos emocionales y físicos, simbolizados por los obstáculos y enemigos que encuentra en su camino.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets\images\Cimg4.png" alt="Imagen 4" class="img-responsive center-block">
+                    <div class="carousel-caption">
+                        <h3>Majotori</h3>
+                        <p>
+                            Lariat la bruja hará tu deseo realidad si le ganas a una partida de trivia, pero si pierdes ocurrirá una desgracia en su lugar. ¿Cuántas vidas arruinará tu ignorancia?
+
+                            Majotori es un narratrivia, un pequeño juego original que combina una narrativa interactiva con un juego de preguntas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Controles del carrusel -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+    <br>
+    <!-- ... FIN DEL CARRUCEL ... -->
+ 
+  <!-----------------PRESENTACION SOBRE MI----------------------->    
+<div class="SobreMi">
+  <a href="https://www.google.com/">
+    <img src="assets/images/JHbit.png" alt="Imagen link" id="imgPrincipal">
+  </a>
+<p id="textoBase">Bienvenido a la pagina portfolio, aquí se muestra una presentacion de todos los videojuegos desarrollados por JHBit</p>
+</div>
+ <!-----------------FIN PRESENTACION SOBRE MI----------------------->    
+
+ <br><br>
+<!------------ MUESTRA DE PROYECTOS ------------>
+
+  <!------------- MODAL 1 TODA LA PLANTILLA -------------->
+<div class="proyectos-container">
+<!--Esta es la parte exterior que se muestra al inicio antes de presionar el boton-->
+    <div class="proyecto">
+    <img src="assets/images/Cimg1.png" alt="Proyecto 1" class="proyecto-imagen">
+    <div class="proyecto-contenido">
+      <h3>Hollow knight</h3>
+      <p>Desarrollado por team Cherry.</p>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#proyecto1Modal">
+        Ver más <!--Este es el boton que abre el modal-->
+      </button>
+    </div>
+  </div>
+<!---- MODAL: Lo que se mostrara una vez se haga click en el boton ---->
+<div class="modal fade" id="proyecto1Modal" tabindex="-1" role="dialog" aria-labelledby="proyecto1ModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenido adicional -->
+        <img class="modalImg" src="assets/images/minicon.png" alt="Hollow Knight logo"> <!--Logo buscado en la PC del juego-->
+        <h2>Hollow Knight</h2><!--Nombre del juego-->
+        <p>Metroidvania desarrollado por team Cherry.</p><!--Informacion del juego-->
+        <a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank"><!--Pagina donde comprar el juego, con imagen-->
+          <button>
+            <img src="https://images.squarespace-cdn.com/content/v1/5c6e9236523958376b976f4b/1651852916241-HFOA5JKXL0AVD4HDML7H/button-steam-available-fixed-2.png" alt="disponibleSteam1">
+          </button>
+        </a><!--Toda esta etiqueta "a" es para el boton con imagen, se uso tambien para itch.io y se puede usar para otros-->
+        <a href="https://ghomanimation.itch.io/shellbreaker" target="_blank">
+          <button>
+            <img src="https://static.itch.io/images/badge.svg" alt="disponibleitchio1">
+          </button>
+        </a>
+             <!-- Puedes agregar más contenido según tus necesidades -->
+      </div>
+    </div>
+  </div>
+</div>
+<!---- FIN DE LA PLANTILLA DEL MODAL ---->
+
+<!------------- Proyecto 2 -------------->
+  <div class="proyecto">
+    <img src="assets/images/Cimg2.png" alt="Proyecto 2" class="proyecto-imagen">
+    <div class="proyecto-contenido">
+      <h3>Proyecto 2</h3>
+      <p>Descripción breve del Proyecto 2.</p>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#proyecto2Modal">
+        Ver más
+      </button>
+    </div>
+  </div>
+
+  <!---- MODAL ---->
+<div class="modal fade" id="proyecto2Modal" tabindex="-1" role="dialog" aria-labelledby="proyecto2ModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenido adicional -->
+        <h2>Proyecto 2</h2>
+        <p>Descripción detallada del Proyecto 2.</p>
+        <!-- Puedes agregar más contenido según tus necesidades -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <!-- Puedes agregar más botones según tus necesidades -->
+      </div>
+    </div>
+  </div>
+</div>
+<!---- FIN MODAL ---->
+
+    <!------------- Proyecto 3 -------------->
+    <div class="proyecto">
+    <img src="assets/images/Cimg3.png" alt="Proyecto 3" class="proyecto-imagen">
+    <div class="proyecto-contenido">
+      <h3>Proyecto 3</h3>
+      <p>Descripción breve del Proyecto 3.</p>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#proyecto3Modal">
+        Ver más
+      </button>
+    </div>
+  </div>
+
+<!---- MODAL ---->
+<div class="modal fade" id="proyecto3Modal" tabindex="-1" role="dialog" aria-labelledby="proyecto3ModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenido adicional -->
+        <h2>Proyecto 3</h2>
+        <p>Descripción detallada del Proyecto 3.</p>
+        <!-- Puedes agregar más contenido según tus necesidades -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <!-- Puedes agregar más botones según tus necesidades -->
+      </div>
+    </div>
+  </div>
+</div>
+<!---- FIN MODAL ---->
+
+    <!------------- Proyecto 4 -------------->
+    <div class="proyecto">
+      <img src="assets/images/Cimg4.png" alt="Proyecto 4" class="proyecto-imagen">
+      <div class="proyecto-contenido">
+        <h3>Proyecto 4</h3>
+        <p>Descripción breve del Proyecto 4.</p>
+        <!-- Botón -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#proyecto4Modal">
+          Ver Más
+        </button>
+      </div>
+    </div>
+
+<!---- MODAL ---->
+<div class="modal fade" id="proyecto4Modal" tabindex="-1" role="dialog" aria-labelledby="proyecto4ModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenido adicional -->
+        <h2>Proyecto 4</h2>
+        <p>Descripción detallada del Proyecto 4.</p>
+        <!-- Puedes agregar más contenido según tus necesidades -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <!-- Puedes agregar más botones según tus necesidades -->
+      </div>
+    </div>
+  </div>
+</div>
+<!---- FIN MODAL ---->
+<!-- Repetir para otros proyectos -->
+</div>
+<!------------ FIN --- MUESTRA DE PROYECTOS ------------>
+
+
+</main>
+
+
+<!--------------- CURSOGRAMA ------------
+<h1>Desarrollo de un Videojuego</h1>
+<div class="cursograma-container">
+  <div class="step-container">
+    <div class="step">Inicio del Proyecto</div>
+    <p class="CursogramaText">En esta etapa se planifica y boceta todo lo relacionado al proyecto, mecanicas, historia en caso de haberla, publico objetivo y potencial, limitantes tecnicas, etc</p>
+  </div>
+  <div class="step-container">
+    <div class="arrow">&#8595;</div>
+    <div class="step">Conceptualización</div>
+    <p class="CursogramaText">En esta parte una vez planificado y bocetado se conceptualiza todo en dibujos conocidos como concept art, donde se plasman los personajes, los escenarios o el ambiente del juego</p>
+  </div>
+  <div class="step-container">
+    <div class="arrow">&#8595;</div>
+    <div class="step">Diseño del Juego</div>
+    <p class="CursogramaText">Con base en los conceptos establecidos, se inicia la creación de los elementos del juego, como niveles, personajes, objetos, etc. Se definen las mecánicas de juego y la estructura general.</p>
+  </div>
+  <div class="step-container">
+    <div class="arrow">&#8595;</div>
+    <div class="step">Desarrollo</div>
+    <p class="CursogramaText">En esta fase, los programadores y artistas trabajan en la implementación real del juego. Se crean códigos, se diseñan gráficos, se integran sonidos y se construye la estructura del juego.</p>
+  </div>
+  <div class="step-container">
+    <div class="arrow">&#8595;</div>
+    <div class="step">Pruebas</div>
+    <p class="CursogramaText">El juego se somete a pruebas exhaustivas para identificar errores, problemas de rendimiento y asegurar que todas las funciones trabajen como se espera.</p>
+  </div>
+  <div class="step-container">
+    <div class="arrow">&#8595;</div>
+    <div class="step">Pulido y Ajustes</div>
+    <p class="CursogramaText">Basándose en los resultados de las pruebas, se realizan mejoras y ajustes en el juego. Esto puede incluir correcciones de errores, optimización de rendimiento y mejoras visuales.</p>
+  </div>
+  <div class="step-container">
+    <div class="arrow">&#8595;</div>
+    <div class="step">Lanzamiento</div>
+    <p class="CursogramaText">Una vez que el juego ha pasado todas las pruebas y se considera listo, se lanza al público. Esto puede involucrar la distribución en plataformas de juegos, marketing y lanzamiento oficial.</p>
+  </div>
+</div>
+------------ FIN --- CURSOGRAMA ------------>
+
+
+<!--------------- FACTURAS ------------>
+
+<h1>TIPOS DE FACTURAS</h1>
+<p class="FacturaText">las siguientes 3 imagenes son muestras de facturas que contienen las distintas paginas usadas para la venta de videojuegos, en este caso las imagenes usadas son de las plataformas</p>
+
+<!-- Contenedor de las imágenes -->
+<div class="facturaContainer">
+  <img src="https://wotpack.ru/wp-content/uploads/2022/02/word-image-7.png" alt="Factura de Steam">
+  <img src="https://imagekit.androidphoria.com/wp-content/uploads/facturas-iva-google-play.jpg" alt="Factura de Play Store">
+  <img src="https://itch.io/static/images/developers/buying/thumbs/dialog.png" alt="Factura de Itch.io">
+</div>
+
+<!--------------- FACTURAS ------------>
+
+
+<div class="redes">
+    <p>Sobre Nosotros</p>
+    <br>
+    <img src="assets/images/organigrama.png" alt="Organigrama de la empresa" id="organigrama">
+    <br><br>
+    <img class="cursograma" src="C:\Users\Jhon\Documents\ProyectoProgramacion\MiPagina\assets\images\DesarrolloVideojuegosCursograma.png" alt="Cursograma">
+    <img class="Curriculum" src="C:\Users\jhona\OneDrive\Documentos\CyP Soft\paginaVeliz\assets\images\Curriculum Vitae.png" alt="Cursograma">
+
+</div>
+
+  
+
+
+  
+  <!-- Footer -->
+  <!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<footer>
+<div class="footer">
+<div class="row">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</div>
+
+    <!-- Formulario de suscripción -->
+    <div class="row">
+      <form action="URL_DE_TU_LISTA_DE_MAILCHIMP" method="post" target="_blank">
+        <label for="email">Recibe nuestras actualizaciones:</label>
+        <input type="email" name="EMAIL" id="email" placeholder="Tu correo electrónico" required>
+        <input type="submit" value="Suscribirse">
+      </form>
+    </div>
+
+<div class="row">
+JHBit Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh 
+</div>
+</div>
+</footer>  
+
+  <!-- Inclusión de scripts -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
+
